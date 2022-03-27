@@ -7,7 +7,7 @@ import TinderCardItem from './TinderCardItem'
 
 const style = {
     wrapper: `h-[45rem] w-[27rem] flex flex-col rounded-lg overflow-hidden`,
-    cardMain: `w-full flex-1 relative flex flex-col justify-center items-center bg-gray-500`,
+    cardMain: `w-full flex-1 relative flex flex-col justify-center items-center bg-purple-300`,
     noMoreWrapper: `flex flex-col justify-center items-center absolute`,
     tinderLogo: `text-5xl text-red-500 mb-4`,
     noMoreText: `text-xl text-white`,
@@ -15,7 +15,7 @@ const style = {
 }
 
 const Card = () => {
-    // const { cardsData } = useContext(TinderContext)
+    const { cardsData } = useContext(TinderContext)
 
     return (
         <div className={style.wrapper}>
@@ -28,9 +28,9 @@ const Card = () => {
                     </div>
                 </div>
                 <div className={style.swipesContainer}>
-                    {/* {cardsData.map((card, index) => (
+                    {cardsData.map((card, index) => (
                         <TinderCardItem card={card} key={index} />
-                    ))} */}
+                    ))}
                 </div>
             </div>
             <CardFooter />

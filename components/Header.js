@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import { TinderContext } from '../context/TinderContext'
 
 const style = {
-    wrapper: `h-24 py-11 text-white flex w-screen items-center px-16 justify-between`,
+    wrapper: `h-24 py-11 text-black flex w-screen items-center px-16 justify-between`,
     main: `flex items-center gap-4`,
     tinderText: `text-5xl font-semibold mr-8 cursor-pointer`,
     leftMenu: `flex gap-8 text-lg`,
@@ -12,17 +12,17 @@ const style = {
     rightMenu: `flex gap-3 items-center`,
     currentAccount: `px-2 py-1 border border-gray-500 rounded-full flex items-center`,
     accountAddress: `ml-2`,
-    authButton: `bg-white font-bold text-red-500 px-6 py-3 items-center ml-4 rounded-lg hover:bg-red-500 duration-300 hover:text-white`,
+    authButton: `bg-black font-bold text-red-500 px-6 py-3 items-center ml-4 rounded-lg hover:bg-red-500 duration-300 hover:text-white`,
 }
 
 const Header = () => {
-    // const { connectWallet, currentAccount, disconnectWallet } =
-    //     useContext(TinderContext)
-    const currentAccount="0xdeaa150597535Eed8c95Ad090757815F1B9Da15d"
+    const { connectWallet, currentAccount, disconnectWallet } =
+        useContext(TinderContext)
+    // const currentAccount="0xdeaa150597535Eed8c95Ad090757815F1B9Da15d"
 
     return (
         <div
-            className={`${style.wrapper} ${currentAccount ? 'bg-violet-900' : 'bg-transparent fixed'
+            className={`${style.wrapper} ${currentAccount ? 'bg-violet-300' : 'bg-transparent fixed'
                 }`}
         >
             <div className={style.main}>

@@ -29,7 +29,7 @@ const CardHeader = () => {
             />
             <Image
                 src={logo}
-                height={150}
+                height={50}
                 width={200}
                 alt='logo'
                 className={style.logo}
