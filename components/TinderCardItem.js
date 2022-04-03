@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react'
+import React,{ useState, useContext } from 'react'
 import { TinderContext } from '../context/TinderContext'
 import { FaUndoAlt } from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'

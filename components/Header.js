@@ -12,7 +12,7 @@ const style = {
     rightMenu: `flex gap-3 items-center`,
     currentAccount: `px-2 py-1 border border-gray-500 rounded-full flex items-center`,
     accountAddress: `ml-2`,
-    authButton: `bg-black font-bold text-red-500 px-6 py-3 items-center ml-4 rounded-lg hover:bg-red-500 duration-300 hover:text-white`,
+    authButton: `bg-white font-bold text-red-500 px-6 py-3 items-center ml-4 rounded-lg hover:bg-red-500 duration-300 hover:text-white`,
 }
 
 const Header = () => {
@@ -30,11 +30,10 @@ const Header = () => {
                 <h1 className={style.tinderText}>LetsDate</h1>
 
                 <div className={style.leftMenu}>
-                    <div className={style.menuItem}>Products</div>
+                    <div className={style.menuItem}>About</div>
                     <div className={style.menuItem}>Learn</div>
                     <div className={style.menuItem}>Safety</div>
                     <div className={style.menuItem}>Support</div>
-                    <div className={style.menuItem}>Download</div>
                 </div>
             </div>
             <div className={style.rightMenu}>

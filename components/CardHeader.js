@@ -15,13 +15,13 @@ const style = {
 }
 
 const CardHeader = () => {
-    // const { currentUser } = useContext(TinderContext)
+    const { currentUser } = useContext(TinderContext)
 
     return (
         <div className={style.wrapper}>
             <Image
-                src={profilePic}
-                // src={currentUser?.imageUrl || profilePic}
+                // src={profilePic}
+                src={currentUser?.imageUrl || profilePic}
                 width={40}
                 height={40}
                 alt='profile-pic'

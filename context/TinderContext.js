@@ -142,10 +142,11 @@ export const TinderProvider = ({ children }) => {
             value={{
                 connectWallet,
                 disconnectWallet,
-                cardsData,
-                handleRightSwipe,
                 currentAccount,
                 currentUser,
+                cardsData,
+                handleRightSwipe,
+
             }}
         >
             {children}
